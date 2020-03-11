@@ -20,7 +20,6 @@ async function startTracking() {
 
   model = await handpose.load()
   getMediaStream()
-  isLooping = true
 }
 
 /**
@@ -34,6 +33,9 @@ async function getMediaStream() {
     $canvas.width = $video.width
     $canvas.height = $video.height
     $button.remove()
+    
+    document.body.classList.add('loaded')
+    isLooping = true
     loop()
   }
 }
