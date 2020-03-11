@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handpose Scroll</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+  </head>
+  <body>
+    <p>
+      <button onclick="startTracking()" style="font-size: 36px; padding: 15px;">Start</button>
+    </p>
+    <div id="debug">
+      <canvas style="transform: scale(-1, 1)"></canvas>
+      <video playsinline width="640" height="480" style="display: none"></video>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
