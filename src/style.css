@@ -5,15 +5,16 @@ canvas {
   transform: scale(-1, 1);
 }
 
-body,
-html,
 iframe {
   width: 100%;
-  height: 100%;
+  height: 3000px;
 }
 
 main {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 iframe {

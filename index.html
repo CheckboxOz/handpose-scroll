@@ -25,6 +25,11 @@
       </div>
     </main>
 
-    <script src="src/app.js"></script>
+    <!-- Disable caching on app.js while using http-server -->
+    <script>
+      const $script = document.createElement('script')
+      $script.src = 'src/app.js?nocache=' + Math.random()
+      document.body.appendChild($script)
+    </script>
   </body>
 </html>
