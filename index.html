@@ -8,15 +8,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <p>
-      <button onclick="startTracking()" style="font-size: 36px; padding: 15px;">Start</button>
-    </p>
-    <div id="debug">
-      <canvas style="transform: scale(-1, 1)"></canvas>
-      <video playsinline width="640" height="480" style="display: none"></video>
-    </div>
+    <iframe src="https://en.wikipedia.org/wiki/Main_Page" frameborder="0"></iframe>
+
+    <main>
+      <p class="text-center">
+        <button onclick="startTracking()" style="font-size: 36px; padding: 15px;">Start Webcam</button>
+      </p>
+      <div id="debug">
+        <canvas></canvas>
+        <video playsinline width="640" height="480"></video>
+      </div>
+    </main>
 
     <script src="src/app.js"></script>
   </body>
