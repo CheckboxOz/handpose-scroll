@@ -13,12 +13,23 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <iframe src="https://en.wikipedia.org/wiki/Main_Page" frameborder="0"></iframe>
+    <iframe class="show-when-loaded" src="https://en.wikipedia.org/wiki/Main_Page" frameborder="0"></iframe>
 
     <main>
-      <p class="text-center">
-        <button onclick="startTracking()" style="font-size: 36px; padding: 15px;">Start Webcam</button>
-      </p>
+      <div class="text-center">
+        <p class="show-when-not-loaded">
+          <img src="https://media.giphy.com/media/giEKWdGQCwpTBDzTaX/source.gif">
+        </p>
+        <p>
+          <button onclick="startTracking()" style="font-size: 36px; padding: 15px;">Start Webcam</button>          
+        </p>
+        <p class="show-when-not-loaded">
+          Pinch your index finger and thumb together to initiate a scroll event. Then with your pinched fingers, move your hand up and down to scroll! 
+        </p>
+        <p class="show-when-not-loaded">
+          <a href="https://glitch.com/edit/#!/handpose-scroll-simple?path=src/app.js:6:14">View the Source!</a>
+        </p>
+      </div>
       <div id="debug">
         <canvas></canvas>
         <video playsinline width="640" height="480"></video>

@@ -27,3 +27,9 @@ iframe {
 .text-center {
   text-align: center;
 }
+
+body.loaded .show-when-not-loaded {display: none}
+
+.show-when-loaded {display: none}
+
+body.loaded .show-when-loaded {display: block}
